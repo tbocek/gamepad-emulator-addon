@@ -13,7 +13,6 @@
     "minor": "sh -c '[ -z \"$(git status --porcelain)\" ] && { git tag $(jq -r \".version\" src/manifest.json | xargs npx semver -i minor) && git push origin main --tags; } || echo \"There are pending changes in the working directory. Please commit or stash them first.\"'",
     "revert-tag-patch": "sh -c 'TAG=$(jq -r \".version\" src/manifest.json | xargs npx semver -i patch) && git tag --delete $TAG && git push --delete origin $TAG'",
     "revert-tag-minor": "sh -c 'TAG=$(jq -r \".version\" src/manifest.json | xargs npx semver -i minor) && git tag --delete $TAG && git push --delete origin $TAG'",
-    "test": "npx mocha --require test/setup.js test/unit/*.js"
   },
   "devDependencies": {
     "web-ext": "^8.2.0",
