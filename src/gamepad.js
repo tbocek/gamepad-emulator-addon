@@ -1,6 +1,5 @@
-const MOUSE_MULTIPLIER = 2.0
-
 function main() {
+  const MOUSE_MULTIPLIER = 2.0
   console.log("gamepad-emulator-addon: main function started");
   let config = null;
   window.addEventListener(
