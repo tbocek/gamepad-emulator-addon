@@ -1,6 +1,6 @@
 {
   "name": "gamepad-emulator-addon",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "git@github.com:tbocek/gamepad-emulator-addon.git",
   "author": "Thomas Bocek <tom.gamepad@bocek.ch>",
   "license": "GPLv3",

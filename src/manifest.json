@@ -1,7 +1,9 @@
 {
   "content_scripts": [
     {
-      "js": ["gamepad.js"],
+      "js": [
+        "gamepad.js"
+      ],
       "matches": [
         "https://www.xbox.com/*"
       ],
@@ -23,6 +25,9 @@
   "page_action": {
     "default_icon": {}
   },
-  "permissions": ["storage", "tabs"],
-  "version": "0.0.2"
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "version": "0.0.3"
 }
